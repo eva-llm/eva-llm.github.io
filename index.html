@@ -59,6 +59,7 @@
         .badge-release { background: #065f46; color: #34d399; }
         .badge-mvp { background: #92400e; color: #fbbf24; }
         .badge-poc { background: #3730a3; color: #a5b4fc; }
+        .badge-wip { background: #1f2937; color: #9ca3af; }
 
         .grid {
             display: grid;
@@ -162,14 +163,32 @@
 
             <div class="card">
                 <span class="badge badge-mvp">MVP</span>
-                <h3>eva-cli / parser</h3>
-                <p>Terminal interface & bridge for industry-standard formats (Promptfoo).</p>
+                <h3>eva-cli</h3>
+                <p>A terminal interface for local debugging and seamless CI/CD integration, supporting Promptfoo formats.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-mvp">MVP</span>
+                <h3>eva-parser</h3>
+                <p>A bridge for the ecosystem, converting industry-standard Promptfoo-format into internal eva-run tasks.</p>
             </div>
 
             <div class="card">
                 <span class="badge badge-poc">PoC</span>
                 <h3>eva-guard</h3>
                 <p>MCP-compatible guardrails server basing on eva-judge for production runtime.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-wip">WIP</span>
+                <h3>eva-audit</h3>
+                <p>A tool for Red Teaming, focusing on security and adversarial probes.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-wip">WIP</span>
+                <h3>eva-web</h3>
+                <p>A visual dashboard to manage high-volume test runs, analyze historical performance, and render results directly.</p>
             </div>
         </div>
 
