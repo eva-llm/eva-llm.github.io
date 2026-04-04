@@ -1,1 +1,203 @@
-EVA-LLM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA-LLM | Industrial-Grade AI Reliability</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --text: #e2e8f0;
+            --accent: #3b82f6;
+            --secondary: #94a3b8;
+            --card-bg: #16161a;
+            --border: #27272a;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -0.05em;
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            margin-top: 1rem;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .badge-release { background: #065f46; color: #34d399; }
+        .badge-mvp { background: #92400e; color: #fbbf24; }
+        .badge-poc { background: #3730a3; color: #a5b4fc; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+        .card h3 {
+            margin: 0.5rem 0;
+            font-family: 'JetBrains+Mono', monospace;
+            font-size: 1.2rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-bottom: 0;
+        }
+
+        .metrics {
+            background: #1e1e24;
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+            border-left: 4px solid var(--accent);
+        }
+        .metrics h2 { margin-top: 0; font-size: 1.5rem; }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .metric-item { font-family: 'JetBrains+Mono', monospace; }
+        .metric-label { display: block; color: var(--secondary); font-size: 0.8rem; }
+        .metric-value { font-size: 1.1rem; font-weight: bold; color: var(--accent); }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            color: var(--secondary);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EVA-LLM</h1>
+            <p class="tagline">From AI Experiments to Industrial-Grade Reliability</p>
+            <p>An open-source ecosystem for professional AI Quality Assurance.</p>
+            <a href="https://github.com/eva-llm" class="btn">Explore GitHub Hub</a>
+        </header>
+
+        <div class="grid">
+            <a href="https://eva-llm.github.io/eva-judge/" class="card">
+                <span class="badge badge-release">Release</span>
+                <h3>eva-judge</h3>
+                <p>The Brain. Unified abstraction for LLM-as-a-Judge: G-Eval, B-Eval, and Rubrics.</p>
+            </a>
+
+            <a href="https://eva-llm.github.io/llm-as-a-jest" class="card">
+                <span class="badge badge-release">Release</span>
+                <h3>llm-as-a-jest</h3>
+                <p>AI evaluation for complex agentic scenarios in industry-standard Jest workflow.</p>
+            </a>
+
+            <div class="card">
+                <span class="badge badge-mvp">MVP</span>
+                <h3>eva-run</h3>
+                <p>The Heart. High-performance I/O-bound server for horizontal scaling of millions of tests.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-mvp">MVP</span>
+                <h3>eva-cli / parser</h3>
+                <p>Terminal interface & bridge for industry-standard formats (Promptfoo).</p>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-poc">PoC</span>
+                <h3>dark-teaming</h3>
+                <p>Methodology and framework for measuring Epistemic Honesty and alignment bias.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-poc">PoC</span>
+                <h3>eva-guard</h3>
+                <p>MCP-compatible guardrails server basing on eva-judge for production runtime.</p>
+            </div>
+        </div>
+
+        <section class="metrics">
+            <h2>North Star Metrics (eva-run)</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-label">Efficiency</span>
+                    <span class="metric-value">1M tests / ~8h (Single Node)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Scalability</span>
+                    <span class="metric-value">1M tests / ~3m (200 Nodes)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Concurrency</span>
+                    <span class="metric-value">200+ I/O-bound connections</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Throughput</span>
+                    <span class="metric-value">1.2k – 2k tests / min</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Built by EVA-LLM &middot; MIT License &middot; 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
